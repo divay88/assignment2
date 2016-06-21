@@ -1,0 +1,163 @@
+<!doctype html>
+
+
+<html lang="en">
+    
+        <head>
+            <meta charset="utf-8" />
+            <title>Assignment 2 Part 2</title>
+            
+            <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <![endif]-->
+            
+            <link href="styles/main.css" type="text/css" rel="stylesheet" />
+            <script>
+            // PART 1
+            // STEP 1
+            var num = prompt("Enter a number:");
+                console.log(Math.abs(num));
+            
+            // STEP 2
+            var num = prompt("Please enter a decimal number:");
+                console.log(Math.ceil(num));
+            
+            // STEP 3
+            var num = prompt("Please enter a decimal number:");
+                console.log(Math.floor(num));
+                
+            // STEP 4
+            var nums = prompt("Please enter 5 numbers, with commas and no spaces:");
+                console.log(nums);
+                
+            numbers = nums.split(",");
+                var max = Math.max.apply(Math, numbers);
+                var min = Math.min.apply(Math, numbers);
+                
+                console.log("max = " + max + " and min = " + min); 
+                
+            // STEP 5
+            var num = prompt("Enter a number:");
+                console.log(Math.sqrt(num));
+                
+            // PART 2
+            // STEP 6
+            var currentDate = new Date();
+                console.log(currentDate);
+                
+            // STEP 7
+            var year = prompt("Enter the year:");
+            var month = prompt("Enter a month:");
+            var d = new Date(year, month, 0).getDate();
+            
+                console.log(d);
+                
+            // STEP 8
+            var d = new Date();
+            d = d.toDateString();
+            d = d.split(" ");
+                console.log(d[1]);
+            
+            // STEP 9
+            var wkndDate = new Date();
+            var day = wkndDate.getDay();
+                if (day == 0 || day == 6) {
+                    console.log("It\'s the weekend!");
+                } else {
+                    console.log("Not a weekend!");
+                }   
+            
+            // STEP 10
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+            var yestDate = new Date();
+            var day = yestDate.getDay();
+            var yesterday = day - 1;
+                if (yesterday >= 0) {
+                    console.log(days[yesterday]);
+                }
+                else {
+                    console.log(days[6]);
+                }
+            
+             // STEP 11
+            var date = new Date();
+            var day = currentDate.toDateString().charAt(0);
+                console.log(day);
+                
+            // Part 3
+            // STEP 12
+            var x = prompt("Enter a number");
+            var y = prompt("Enter a second number");
+                if (x > y) {
+                console.log("The first number is larger");
+                }    
+            
+            // STEP 13
+            var students = ["Ursula", "Paul", "Henry", "Tabitha", "Lucy"];
+            var marks = [80, 77, 88, 95, 68];
+            var grades = [];
+                for (var i = 0; i < 5; i++) {
+                    if (marks[i] >= 90) {
+                    grades[i] = "A";
+                    } 
+                    else if (marks[i] >= 80) {
+                    grades[i] = "B";
+                    } 
+                    else if (marks[i] >= 70) {
+                    grades[i] = "C";
+                    } 
+                    else if (marks[i] >= 60) {
+                    grades[i] = "D";    
+                    } 
+                    else {
+                    grades[i] = "F"; }
+                        console.log(students[i] + " " + marks[i] + " " + grades[i]);
+            }
+                
+            // STEP 14
+            for (var i = 1; i <= 15; i++) {
+                if ((i % 2) == 0) {
+                    console.log(i + " is even.");
+                } 
+                else {
+                    console.log(i + " is odd.");
+                }  
+            }
+            
+            // STEP 15
+            for (var i = 1; i <= 100; i++) {
+                if (i % 3 == 0 && i % 5 == 0) {
+                    console.log("FizzBuzz");
+                }
+                else if (i % 3 == 0) {
+                    console.log("Fizz");
+                }
+                else if (i % 5 == 0) {
+                    console.log("Buzz");
+                }
+                else {
+                    console.log(i);
+                } 
+            }   
+                
+            // PART 9
+            for (i = 0; i <= 15; i++) {
+                if (i % 2 == 0) {
+                    console.log(i + " is even");
+                }
+                else {
+                    console.log(i + " is odd");
+                }
+            }
+            </script> 
+        </head>
+        
+        <body>
+            <header>
+                
+            </header>
+            <footer>
+                
+            </footer>
+        </body>
+</html>
