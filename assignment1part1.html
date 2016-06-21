@@ -1,0 +1,77 @@
+<!doctype html>
+
+
+<html lang="en">
+    
+        <head>
+            <meta charset="utf-8" />
+            <title>Assignment 2 Part 1</title>
+            
+            <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <![endif]-->
+            
+            <link href="styles/main.css" type="text/css" rel="stylesheet" />
+            
+            <script>
+                // STEP 1
+                var name = prompt("Enter your name.");
+                    alert(name.length);
+                
+                // STEP 2
+                var name = prompt("Enter your name.");
+                var num = prompt("Enter a number between 1 and " + name.length);
+                    alert(name.charAt(num - 1));
+                
+                // STEP 3
+                var firstName = prompt("Enter your first name.");
+                var lastName = prompt ("Enter your last name.");
+                    alert("Your name is: " + firstName + " " + lastName + ".");
+               
+                // STEP 4
+                var str = "The quick brown fox jumps over the lazy fox.";
+                    alert(str.indexOf('fox'));
+                
+                // STEP 5
+                var phrase = "The quick brown fox jumps over the lazy fox.";
+                    alert(phrase.lastIndexOf('fox'));
+                
+                // STEP 6
+                var phrase = "The quick brown fox jumps over the lazy dog.";
+                var fullName = prompt("Enter your full name.");
+                    alert(phrase.replace("the lazy dog", fullName));
+               
+                // STEP 7
+                var phrase = "The quick brown fox jumps over the lazy dog.";
+                var word = prompt("Enter a word.");
+                    alert(phrase.search(word));
+                
+                // STEP 8
+                var old_string = "The quick brown fox jumps over the lazy dog";
+                var new_string = old_string.slice(old_string.lastIndexOf("the lazy dog"), old_string.length);
+                    alert(new_string.toUpperCase());
+                
+                // STEP 9
+                var capsPhrase = " THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG  ";
+                var newPhrase = capsPhrase.trim();
+                    alert(newPhrase.toLowerCase());
+                
+                // STEP 10
+                var phrase = "the quick brown fox jumps over the lazy dog";
+                var firstLetter = phrase.charAt(0).toUpperCase();
+                var firstCapphrase = firstLetter + phrase.slice(1,phrase.length);
+                    alert(firstCapphrase);
+                
+            </script>
+        
+        </head>
+        
+        <body>
+            <header>
+                
+            </header>
+            <footer>
+                
+            </footer>
+        </body>
+</html>
